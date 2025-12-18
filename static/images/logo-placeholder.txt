@@ -1,0 +1,3 @@
+# Placeholder - Replace with your actual logo
+# This file is here to prevent build errors
+# Save your logo image as logo.png in this directory

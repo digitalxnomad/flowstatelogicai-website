@@ -26,6 +26,30 @@ body {
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--dark-bg);
+    position: relative;
+}
+
+/* Hexagonal background pattern */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(30deg, transparent 48%, rgba(110, 180, 230, 0.03) 49%, rgba(110, 180, 230, 0.03) 51%, transparent 52%),
+        linear-gradient(90deg, transparent 48%, rgba(110, 180, 230, 0.03) 49%, rgba(110, 180, 230, 0.03) 51%, transparent 52%),
+        linear-gradient(150deg, transparent 48%, rgba(110, 180, 230, 0.03) 49%, rgba(110, 180, 230, 0.03) 51%, transparent 52%);
+    background-size: 100px 173px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+body > * {
+    position: relative;
+    z-index: 1;
 }
 
 .container {
@@ -57,9 +81,10 @@ body {
     gap: 1rem;
 }
 
-.logo img {
-    height: 50px;
+.logo-image {
+    height: 60px;
     width: auto;
+    object-fit: contain;
 }
 
 .logo h1 {
@@ -117,19 +142,121 @@ body {
 .hero::before {
     content: '';
     position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 50%, rgba(110, 180, 230, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(160, 200, 240, 0.1) 0%, transparent 40%);
+    pointer-events: none;
+    animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    33% {
+        transform: translate(30px, -30px) rotate(120deg);
+    }
+    66% {
+        transform: translate(-20px, 20px) rotate(240deg);
+    }
+}
+
+/* Floating Hexagons */
+.hero-hexagons {
+    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(110, 180, 230, 0.1) 0%, transparent 50%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     pointer-events: none;
+}
+
+.hexagon {
+    position: absolute;
+    width: 80px;
+    height: 46px;
+    background-color: rgba(110, 180, 230, 0.1);
+    opacity: 0;
+    animation: floatHexagon 15s infinite ease-in-out;
+}
+
+.hexagon::before,
+.hexagon::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+.hexagon::before {
+    bottom: 100%;
+    border-bottom: 23px solid rgba(110, 180, 230, 0.1);
+}
+
+.hexagon::after {
+    top: 100%;
+    border-top: 23px solid rgba(110, 180, 230, 0.1);
+}
+
+.hex-1 {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 20s;
+}
+
+.hex-2 {
+    top: 60%;
+    left: 80%;
+    animation-delay: 2s;
+    animation-duration: 18s;
+}
+
+.hex-3 {
+    top: 30%;
+    left: 70%;
+    animation-delay: 4s;
+    animation-duration: 22s;
+}
+
+.hex-4 {
+    top: 70%;
+    left: 15%;
+    animation-delay: 1s;
+    animation-duration: 19s;
+}
+
+.hex-5 {
+    top: 20%;
+    left: 45%;
+    animation-delay: 3s;
+    animation-duration: 21s;
+}
+
+@keyframes floatHexagon {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(-50px) rotate(180deg);
+        opacity: 0.3;
+    }
 }
 
 .hero-content {
     max-width: 900px;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hero-title {
