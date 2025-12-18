@@ -70,19 +70,22 @@ body > * {
 
 .nav-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
 .logo-image {
-    height: 60px;
+    height: 300px;
     width: auto;
     object-fit: contain;
 }
@@ -101,6 +104,7 @@ body > * {
     display: flex;
     list-style: none;
     gap: 2rem;
+    justify-content: center;
 }
 
 .nav-links a {
