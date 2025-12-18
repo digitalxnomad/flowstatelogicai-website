@@ -112,10 +112,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 top: 100%;
                 left: 0;
                 right: 0;
-                background-color: white;
+                background-color: rgb(15, 40, 60);
                 padding: 2rem;
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
                 gap: 1rem;
+                border-top: 1px solid rgba(110, 180, 230, 0.2);
             }
 
             .mobile-menu-toggle.active span:nth-child(1) {
