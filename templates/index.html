@@ -6,16 +6,20 @@
     <title>FlowStateLogic.ai - Reliable Retail Data Automation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@300;400;700;900&family=Aboreto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <div class="logo">
-                    <img src="/static/images/logo.png" alt="FlowStateLogic.ai Logo" class="logo-image">
+                <div class="brand">
+                    <div class="brand-logo-wrap">
+                        <img src="/static/images/logo.png" alt="FlowStateLogic.ai" class="brand-logo">
+                    </div>
+                    <div class="brand-copy">
+                        <span class="brand-name">FlowStateLogic.ai</span>
+                    </div>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
@@ -24,7 +28,7 @@
                     <li><a href="#features">Features</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -33,15 +37,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-hexagons">
-            <div class="hexagon hex-1"></div>
-            <div class="hexagon hex-2"></div>
-            <div class="hexagon hex-3"></div>
-            <div class="hexagon hex-4"></div>
-            <div class="hexagon hex-5"></div>
-        </div>
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title"><span class="accent">FlowStateLogic.ai</span></h1>
@@ -196,48 +192,33 @@
 
             <div class="contact-content">
                 <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                    <div class="form-grid">
+                        <label class="form-field">
+                            <span>Name</span>
+                            <input type="text" id="name" name="name" required>
+                        </label>
+                        <label class="form-field">
+                            <span>Email</span>
+                            <input type="email" id="email" name="email" required>
+                        </label>
+                        <label class="form-field">
+                            <span>Company</span>
+                            <input type="text" id="company" name="company">
+                        </label>
+                        <label class="form-field full">
+                            <span>Message</span>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </label>
                     </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="company">Company</label>
-                        <input type="text" id="company" name="company">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    <button type="submit" class="btn btn-primary btn-full">Send</button>
                 </form>
-
-                <div class="contact-info">
-                    <div class="contact-info-item">
-                        <h3>Email</h3>
-                        <p>contact@flowstatelogic.ai</p>
-                    </div>
-                    <div class="contact-info-item">
-                        <h3>Phone</h3>
-                        <p>+1 (555) 123-4567</p>
-                    </div>
-                    <div class="contact-info-item">
-                        <h3>Address</h3>
-                        <p>123 AI Boulevard<br>Tech City, TC 12345</p>
-                    </div>
-                </div>
+            </div>
+            <div class="contact-visual">
+                <div class="contact-visual-overlay"></div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -273,9 +254,25 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 FlowStateLogic.ai. All rights reserved.</p>
+            <div class="footer-links">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+                    <li><a href="https://www.x.com" target="_blank" rel="noreferrer">X</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FlowStateLogic.ai. All rights reserved.</p>
         </div>
     </footer>
 
