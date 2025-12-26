@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlowStateLogic.ai - AI-Powered Solutions</title>
+    <title>FlowStateLogic.ai - Reliable Retail Data Automation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -19,8 +19,9 @@
                 </div>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#problem">The Problem</a></li>
+                    <li><a href="#approach">Our Approach</a></li>
+                    <li><a href="#features">Features</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <button class="mobile-menu-toggle" id="mobileMenuToggle">
@@ -43,136 +44,146 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Transform Your Business with <span class="accent">AI-Powered Solutions</span></h1>
-                <p class="hero-subtitle">Unlock the power of artificial intelligence to streamline operations, enhance decision-making, and drive innovation.</p>
+                <h1 class="hero-title"><span class="accent">FlowStateLogic.ai</span></h1>
+                <h2 class="hero-subtitle-large">Reliable Retail Data Automation</h2>
+                <p class="hero-tagline">POS • Receipts • Store Feeds • Integrations</p>
+                <p class="hero-description">FlowStateLogic builds production-grade automation tools that keep retail data moving — reliably, auditable, and without fragile scripts or enterprise middleware.</p>
+                <p class="hero-description">If your retail systems still depend on file drops, XML receipts, batch jobs, or SFTP feeds, we help you modernize them safely.</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                    <a href="#services" class="btn btn-secondary">Learn More</a>
+                    <a href="#features" class="btn btn-primary">View Retail Integration Tools</a>
+                    <a href="#contact" class="btn btn-secondary">Request a Demo</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- The Problem Section -->
+    <section id="problem" class="problem-section">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-subtitle">Comprehensive AI solutions tailored to your business needs</p>
+            <h2 class="section-title">The Retail Integration Problem</h2>
+            <p class="problem-intro">Retail systems don't fail loudly — they fail quietly.</p>
 
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3>Machine Learning</h3>
-                    <p>Build intelligent models that learn from data and make accurate predictions to drive business outcomes.</p>
+            <div class="problem-list">
+                <div class="problem-item">POS files stop arriving</div>
+                <div class="problem-item">Receipts process partially</div>
+                <div class="problem-item">Store feeds fall behind</div>
+                <div class="problem-item">Batch jobs "run" but miss data</div>
+                <div class="problem-item">Problems show up days later in accounting</div>
+            </div>
+
+            <p class="problem-statement"><strong>Enterprise platforms are expensive and slow.</strong><br>Custom scripts break and get abandoned.</p>
+            <p class="problem-conclusion">Retail teams need something simpler — and dependable.</p>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="approach-section">
+        <div class="container">
+            <h2 class="section-title">The FlowStateLogic Approach</h2>
+            <p class="section-subtitle">FlowStateLogic tools are small, installable services designed for retail environments:</p>
+
+            <div class="approach-grid">
+                <div class="approach-item">✓ Runs on-prem or in your cloud</div>
+                <div class="approach-item">✓ Watches folders or SFTP feeds</div>
+                <div class="approach-item">✓ Validates and normalizes POS data</div>
+                <div class="approach-item">✓ Retries failures automatically</div>
+                <div class="approach-item">✓ Produces audit-ready logs</div>
+                <div class="approach-item">✓ Requires no database or platform lock-in</div>
+            </div>
+
+            <p class="approach-conclusion">They quietly do the job your business depends on.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Built Specifically for Retail Workflows</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🔹 POS & Receipt Processing</h3>
+                    <ul class="feature-list">
+                        <li>XML / JSON / CSV ingestion</li>
+                        <li>Receipt validation and normalization</li>
+                        <li>Multi-store aggregation</li>
+                        <li>Schema consistency enforcement</li>
+                    </ul>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                            <line x1="9" y1="9" x2="15" y2="9"/>
-                            <line x1="9" y1="15" x2="15" y2="15"/>
-                        </svg>
-                    </div>
-                    <h3>Natural Language Processing</h3>
-                    <p>Extract insights from text, automate content generation, and enable intelligent communication systems.</p>
+                <div class="feature-card">
+                    <h3>🔹 Store & Batch Automation</h3>
+                    <ul class="feature-list">
+                        <li>Store-level file monitoring</li>
+                        <li>Missing file detection</li>
+                        <li>Volume and timing alerts</li>
+                        <li>Safe retries and quarantines</li>
+                    </ul>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-                        </svg>
-                    </div>
-                    <h3>Data Analytics</h3>
-                    <p>Transform raw data into actionable insights with advanced analytics and visualization tools.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
-                            <line x1="9" y1="9" x2="9.01" y2="9"/>
-                            <line x1="15" y1="9" x2="15.01" y2="9"/>
-                        </svg>
-                    </div>
-                    <h3>AI Consulting</h3>
-                    <p>Strategic guidance to identify AI opportunities and implement solutions that align with your goals.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                            <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
-                            <polyline points="7.5 19.79 7.5 14.6 3 12"/>
-                            <polyline points="21 12 16.5 14.6 16.5 19.79"/>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-                            <line x1="12" y1="22.08" x2="12" y2="12"/>
-                        </svg>
-                    </div>
-                    <h3>Custom AI Solutions</h3>
-                    <p>Bespoke AI applications designed to solve your unique challenges and scale with your business.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                        </svg>
-                    </div>
-                    <h3>AI Integration</h3>
-                    <p>Seamlessly integrate AI capabilities into your existing systems and workflows for maximum impact.</p>
+                <div class="feature-card">
+                    <h3>🔹 Retail Integrations</h3>
+                    <ul class="feature-list">
+                        <li>POS → Accounting</li>
+                        <li>POS → Inventory</li>
+                        <li>POS → Loyalty & Analytics</li>
+                        <li>Store → HQ pipelines</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Who Uses Section -->
+    <section id="who-uses" class="who-uses-section">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">About FlowStateLogic</h2>
-                    <p>At FlowStateLogic.ai, we believe in the transformative power of artificial intelligence. Our mission is to make cutting-edge AI technology accessible and practical for businesses of all sizes.</p>
-                    <p>With years of experience in machine learning, data science, and enterprise software development, our team delivers solutions that drive real results. We focus on understanding your unique challenges and creating AI systems that integrate seamlessly with your operations.</p>
-                    <div class="stats">
-                        <div class="stat">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Projects Completed</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">98%</div>
-                            <div class="stat-label">Client Satisfaction</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">50+</div>
-                            <div class="stat-label">AI Experts</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <svg width="100%" height="100%" viewBox="0 0 400 400" fill="none">
-                            <rect width="400" height="400" fill="rgb(110, 180, 230)" opacity="0.1"/>
-                            <!-- Hexagonal pattern inspired by logo -->
-                            <g transform="translate(200, 200)">
-                                <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" stroke="rgb(110, 180, 230)" stroke-width="3" fill="none"/>
-                                <polygon points="0,-100 87,-50 87,50 0,100 -87,50 -87,-50" stroke="rgb(110, 180, 230)" stroke-width="2" fill="none" opacity="0.6"/>
-                                <polygon points="52,-90 104,-60 104,0 52,30 0,0 0,-60" stroke="rgb(160, 200, 240)" stroke-width="2" fill="none" opacity="0.4"/>
-                                <polygon points="-52,-90 0,-120 52,-90 52,-30 0,-60 -52,-30" stroke="rgb(160, 200, 240)" stroke-width="2" fill="none" opacity="0.4"/>
-                                <circle cx="0" cy="0" r="25" fill="rgb(110, 180, 230)" opacity="0.3"/>
-                            </g>
-                        </svg>
-                    </div>
-                </div>
+            <h2 class="section-title">Who Uses FlowStateLogic</h2>
+
+            <div class="who-uses-grid">
+                <div class="who-uses-item">Mid-size retailers (50–500 stores)</div>
+                <div class="who-uses-item">Franchise operators</div>
+                <div class="who-uses-item">Retail IT teams</div>
+                <div class="who-uses-item">POS vendors & integrators</div>
+                <div class="who-uses-item">Retail MSPs</div>
+            </div>
+
+            <p class="who-uses-conclusion">If your retail operation depends on accurate transaction data, these tools are built for you.</p>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="why-choose" class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title">Why Retail Teams Choose FlowStateLogic</h2>
+
+            <div class="why-choose-list">
+                <div class="why-choose-item">✔ Designed by engineers who've run retail pipelines at scale</div>
+                <div class="why-choose-item">✔ Deterministic, predictable behavior</div>
+                <div class="why-choose-item">✔ No hidden platforms or forced subscriptions</div>
+                <div class="why-choose-item">✔ Clear logs and traceability</div>
+                <div class="why-choose-item">✔ Easy to deploy and support</div>
+            </div>
+
+            <p class="why-choose-conclusion">Most teams are live within a day.</p>
+        </div>
+    </section>
+
+    <!-- Start Section -->
+    <section id="start" class="start-section">
+        <div class="container">
+            <h2 class="section-title">Start With One Gateway. Expand When Ready.</h2>
+            <p class="start-text">Many customers begin with a single POS integration.<br>They later add monitoring, validation, and multi-store aggregation.</p>
+            <p class="start-conclusion">Buy what you need — nothing more.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <h2 class="section-title">Ready to Stabilize Your Retail Data?</h2>
+            <div class="cta-buttons">
+                <a href="#features" class="btn btn-primary">View Retail POS Gateway</a>
+                <a href="#contact" class="btn btn-secondary">Request a Demo</a>
             </div>
         </div>
     </section>
@@ -181,7 +192,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Ready to transform your business with AI? Let's talk.</p>
+            <p class="section-subtitle">Ready to stabilize your retail data? Let's talk.</p>
 
             <div class="contact-content">
                 <form class="contact-form" id="contactForm">
@@ -232,24 +243,25 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>FlowStateLogic<span class="accent">.ai</span></h3>
-                    <p>Empowering businesses through intelligent AI solutions.</p>
+                    <p>Reliable retail data automation for production environments.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#problem">The Problem</a></li>
+                        <li><a href="#approach">Our Approach</a></li>
+                        <li><a href="#features">Features</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h4>Solutions</h4>
                     <ul>
-                        <li><a href="#services">Machine Learning</a></li>
-                        <li><a href="#services">NLP</a></li>
-                        <li><a href="#services">Data Analytics</a></li>
-                        <li><a href="#services">AI Consulting</a></li>
+                        <li><a href="#features">POS Processing</a></li>
+                        <li><a href="#features">Batch Automation</a></li>
+                        <li><a href="#features">Retail Integrations</a></li>
+                        <li><a href="#contact">Request Demo</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
